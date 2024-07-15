@@ -60,7 +60,7 @@ class LocalDevPublicStream extends PublicStream {
     }
     return parent::getExternalUrl();
   }
-
+  // phpcs:disable -- method name is inherited and not in lowerCamelCase
   /**
    * {@inheritdoc}
    */
@@ -83,7 +83,7 @@ class LocalDevPublicStream extends PublicStream {
 
     return (bool) $this->handle;
   }
-
+  // phpcs:enable
   /**
    * Generates a URL for file URIs that are not available locally.
    *
